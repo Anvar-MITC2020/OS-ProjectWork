@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Operating System Project Submission(INHA University in Tashken)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  color:brown;
+}
+
+tr:nth-child(even) {
+  background-color: #42dbdd;
+}
+tr:nth-child(odd) {
+  background-color: #0fcca2;
+}
+
+.btn_busNum{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 24px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+.active, .collapsible:hover {
+  background-color: #f53;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1fcd1;
+
+}
+</style>
+</head>
+<body >
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Team:24-OS-Project</h1></a>
+            <p>
+              <img src="images/IUT-logo.png" alt="INHA University certification">
+              <span>INHA University Certified</span>
+            </p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span>Home</a>
+            </li>
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Buses</a>
+            </li>
+            <li>
+              <a href="file:///C:/Users/User/Desktop/OS-Project/single-category.html">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">Tickets</a>
+            </li>
+            <li>
+              <a href="file:///C:/Users/User/Desktop/OS-Project/index.html">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Home</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:998 71 289-99-99">
+                <span>998 71 289-99-99</span></a><div>* We Support</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:998 71 289-99-99">
+    <span class="glyphicon glyphicon-earphone"></span>
+    998 71 289-99-99
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Support</div>
+
+<h2 style="text-align: center;"> Bus Lines</h2>
+<form action="\btnPressed.php" method="post">
+<center><input type="text" name="cardNum" required style="border-radius: 25px;width: 150px; text-align: center; font-size: 18px; height: 20px; padding: 5px; margin: 10px; margin-left:360px;" /></center>
+
+<div style="width: 40%; margin:auto;">
+
+<input type="button" value="Moscow" class="collapsible"/>
+<div class="content">
+
+<table>
+
+
+
+  <tr>
+    <th>Bus number</th>
+    <th>First Bus Stop</th>
+    <th>Last Bus Stop</th>
+    <th>Bus transportation number</th>
+  </tr>
+  <tr>
+    <td>
+      <input type="submit" class="btn_busNum" name="test" id="test" value="0000000001" />
+    </td>
+    <td>Tashkent </td>
+    <td>Moscow </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000002" />
+    </td>
+    <td>Moscow </td>
+    <td>Tashkent </td>
+    <td>01 AB 004 </td>
+    </tr>
+    
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000003" /></td>
+    <td>Tashkent </td>
+    <td>Moscow </td>
+    <td>01 AB 023 </td>
+    </tr>
+    
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000004" /></td>
+    <td>Moscow</td>
+    <td>Tashkent </td>
+    <td>01 AB 003 </td>
+    </tr>
+   
+</table>
+
+
+</div>
+<input type="button" value="Astana" class="collapsible"/>
+<div class="content">
+<table>
+
+ <tr>
+    <th>Bus number</th>
+    <th>First Bus Stop</th>
+    <th>Last Bus Stop</th>
+    <th>Bus transportation number</th>
+  </tr>
+  <tr>
+
+    <td> <input type="submit" class="btn_busNum" name="test" id="test" value="0000000005" /></td>
+    <td>Tashkent </td>
+    <td>Astana </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    <tr>
+    <td> <input type="submit" class="btn_busNum" name="test" id="test" value="0000000006" /></td>
+    <td>Astana </td>
+    <td>Tashkent </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    
+    <tr>
+    <td> <input type="submit" class="btn_busNum" name="test" id="test" value="0000000007" /></td>
+    <td>Tashkent </td>
+    <td>Astana </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    
+    <tr>
+    <td> <input type="submit" class="btn_busNum" name="test" id="test" value="0000000008" /></td>
+    <td>Astana </td>
+    <td>Tashkent </td>
+    <td>01 AB 003 </td>
+    </tr>
+</table>
+
+</div>
+
+<input type="button" value="Almata" class="collapsible"/>
+<div class="content">
+<table>
+ <tr>
+    <th>Bus number</th>
+    <th>First Bus Stop</th>
+    <th>Last Bus Stop</th>
+    <th>Bus transportation number</th>
+  </tr>
+  <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000009" /></td>
+    <td>Tashkent </td>
+    <td>Almata </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000010" /></td>
+    <td>Almata </td>
+    <td>Tashkent </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000011" /></td>
+    <td>Tasheknt </td>
+    <td>Almata </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000012" /></td>
+    <td>Almata </td>
+    <td>Tashkent </td>
+    <td>01 AB 003 </td>
+    </tr>
+</table>
+
+</div>
+<input type="button" value="Sankt-Peterburg" class="collapsible"/>
+<div class="content">
+<table>
+<tr>
+    <th>Bus number</th>
+    <th>First Bus Stop</th>
+    <th>Last Bus Stop</th>
+    <th>Bus transportation number</th>
+  </tr>
+  <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000013" /></td>
+    <td>Tashkent </td>
+    <td>Sankt-Peterburg </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000014" /></td>
+    <td>Sankt-Peterburg </td>
+    <td>Tashkent </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000015" /></td>
+    <td>Tashekent </td>
+    <td>Sankt-Peterburg</td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000016" /></td>
+    <td>Sankt-Peterburg </td>
+    <td>Tashkent </td>
+    <td>01 AB 003 </td>
+    </tr>
+  </table>
+</div>
+<input type="button" value="Samara" class="collapsible"/>
+
+<div class="content">
+<table>
+<tr>
+    <th>Bus number</th>
+    <th>First Bus Stop</th>
+    <th>Last Bus Stop</th>
+    <th>Bus transportation number</th>
+  </tr>
+  <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000017" /></td>
+    <td>Tasheknt </td>
+    <td>Samara </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000018" /></td>
+    <td>Samara </td>
+    <td>Tashkent </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000019" /></td>
+    <td>Tasheknt </td>
+    <td>Samara </td>
+    <td>01 AB 003 </td>
+    </tr>
+    
+    
+    <tr>
+    <td><input type="submit" class="btn_busNum" name="test" id="test" value="0000000020" /></td>
+    <td>Samara </td>
+    <td>Tashkent </td>
+    <td>01 AB 003 </td>
+    </tr>
+</table>
+
+</div>
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+</div>
+</form>
+<footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday, Sunday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          9, Ziyolilar str., M.Ulugbek district, Tashkent city, 100170<br>
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"We know this, and thus, our high-qualified faculty takes the full responsibility on providing you with all the necessary knowledge and skills to succeed in the 21st century.!"</p>
+          <p>"Our foremost goal is to become a part of your future success and share the joy of your great achievements!!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright All Right Reserved 2020, Inha University in Tashkent</div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
